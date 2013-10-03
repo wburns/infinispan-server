@@ -1,0 +1,15 @@
+        <subsystem xmlns="urn:infinispan:server:core:6.0" default-cache-container="local">
+            <cache-container 
+                name="local"
+                default-cache="testcache">
+                <local-cache
+                    name="testcache"
+                    >
+                    <transaction mode="NONE" />
+                    <indexing index="ALL">
+                      <property name="default.directory_provider">ram</property>
+                      <property name="lucene_version">LUCENE_CURRENT</property>
+                    </indexing>
+                </local-cache>
+            </cache-container>
+        </subsystem>
