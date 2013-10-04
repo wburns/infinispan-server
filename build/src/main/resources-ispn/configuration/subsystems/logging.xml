@@ -10,6 +10,7 @@
            </formatter>
        </console-handler>
        <periodic-rotating-file-handler name="FILE" autoflush="true">
+         <level name="TRACE"/>
            <formatter>
                <pattern-formatter pattern="%d{HH:mm:ss,SSS} %-5p [%c] (%t) %s%E%n"/>
            </formatter>
@@ -36,7 +37,7 @@
            <level name="ERROR"/>
       </logger>
       <root-logger>
-          <level name="INFO"/>
+          <level name="TRACE"/>
           <handlers>
               <handler name="CONSOLE"/>
               <handler name="FILE"/>
